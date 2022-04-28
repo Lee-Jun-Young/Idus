@@ -13,4 +13,7 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Idus"
-include ':app'
+include ':presenter'
+include ':data'
+include ':domain'
+include ':network'
