@@ -8,7 +8,7 @@ data class LocationSearch(
 data class Location(
     val title: String,
     val woeid: Int,
-    val data: ConsolidateData
+    val data: List<ConsolidateData>
 )
 
 data class ConsolidateData(

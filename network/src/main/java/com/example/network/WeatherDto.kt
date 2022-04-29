@@ -15,7 +15,7 @@ data class LocationDto(
     @SerializedName("woeid")
     val woeid: Int,
     @SerializedName("consolidated_weather")
-    val data: ConsolidateDataDto
+    val data: List<ConsolidateDataDto>
 )
 
 data class ConsolidateDataDto(

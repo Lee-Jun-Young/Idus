@@ -9,7 +9,7 @@ interface WeatherService {
     @GET("/location/search")
     suspend fun locationSearch(
         @Query("query") query: String
-    ): LocationSearchDto
+    ): List<LocationSearchDto>
 
     @GET("/location/{woeid}")
     suspend fun location(

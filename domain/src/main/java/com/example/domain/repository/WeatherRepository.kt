@@ -5,7 +5,7 @@ import com.example.domain.model.LocationSearch
 
 interface WeatherRepository {
 
-    suspend fun getLocationSearch(query: String): LocationSearch
+    suspend fun getLocationSearch(query: String): List<LocationSearch>
 
     suspend fun getLocation(woeid: Int): Location
 
