@@ -6,12 +6,12 @@ import retrofit2.http.Query
 
 interface WeatherService {
 
-    @GET("/location/search")
+    @GET("location/search")
     suspend fun locationSearch(
         @Query("query") query: String
     ): List<LocationSearchDto>
 
-    @GET("/location/{woeid}")
+    @GET("location/{woeid}")
     suspend fun location(
         @Path("woeid") woeid: Int?
     ): LocationDto
