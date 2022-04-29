@@ -24,7 +24,7 @@ data class ConsolidateDataDto(
     @SerializedName("weather_state_abbr")
     val weather_state_abbr: String,
     @SerializedName("the_temp")
-    val the_temp: Int,
+    val the_temp: Double,
     @SerializedName("humidity")
     val humidity: Float
 )

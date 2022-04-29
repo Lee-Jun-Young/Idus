@@ -14,6 +14,6 @@ data class Location(
 data class ConsolidateData(
     val weather_state_name: String,
     val weather_state_abbr: String,
-    val the_temp: Int,
+    val the_temp: Double,
     val humidity: Float
 )
