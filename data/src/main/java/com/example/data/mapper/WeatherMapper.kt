@@ -28,6 +28,6 @@ fun ConsolidateDataDto.toConsolidateData(): ConsolidateData =
     ConsolidateData(
         weather_state_name,
         weather_state_abbr,
-        the_temp,
-        humidity
+        the_temp.toInt(),
+        humidity.toInt()
     )
