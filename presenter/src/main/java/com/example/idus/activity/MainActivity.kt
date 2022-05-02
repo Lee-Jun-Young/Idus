@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
                 binding.rvMain.visibility = View.GONE
             } else {
                 adapter.setList(it)
+                binding.rvMain.scrollToPosition(0)
                 binding.progressBar.visibility = View.GONE
                 binding.rvMain.visibility = View.VISIBLE
             }
