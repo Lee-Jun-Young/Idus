@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Lee/Desktop/Idus/presenter/src/main/res/layout/activity_main.xml" value="0.29775280898876405" />
+        <entry key="..\:/Users/Lee/Desktop/Idus/presenter/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Lee/Desktop/Idus/presenter/src/main/res/layout/item_rv.xml" value="0.1" />
+        <entry key="..\:/Users/Lee/Desktop/Idus/presenter/src/main/res/layout/rv_header.xml" value="0.19739583333333333" />
       </map>
     </option>
   </component>
