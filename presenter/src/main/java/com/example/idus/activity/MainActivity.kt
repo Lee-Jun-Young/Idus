@@ -52,15 +52,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun initObservers() {
         viewModel.locationData.observe(this) {
-            if (it.isEmpty()) {
-                binding.progressBar.visibility = View.VISIBLE
-                binding.rvMain.visibility = View.GONE
-            } else {
-                adapter.setList(it)
-                binding.rvMain.scrollToPosition(0)
-                binding.progressBar.visibility = View.GONE
-                binding.rvMain.visibility = View.VISIBLE
-            }
+            adapter.submitList(it)
+            binding.rvMain.scrollToPosition(0)
+            binding.progressBar.visibility = View.GONE
+            binding.refreshLayout.visibility = View.VISIBLE
         }
     }
 
